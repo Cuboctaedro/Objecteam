@@ -1,0 +1,39 @@
+baseURL: "http://localhost:1313/"
+relativeURLs: false
+canonifyURLs: false
+config: "config.yaml"
+defaultLayout: "single"
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+disableLiveReload: false
+enableGitInfo: false
+disableHugoGeneratorInject: true
+# Allows you to disable all page types and will render nothing related to 'kind';
+# values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
+disableKinds: ["RSS", "sitemap", "robotsTXT", "404"]
+enableMissingTranslationPlaceholders: false
+googleAnalytics: ""
+languages:
+    en:
+        weight: 1
+        languageName : "ENG"
+    el:
+        weight: 2
+        languageName : "GR"
+summaryLength: 70
+metaDataFormat: "yaml"
+paginate: 10
+paginatePath: "page"
+pluralizeListTitles: false
+preserveTaxonomyNames: false
+publishDir: "public"
+staticDir: "static"
+themesDir: "themes"
+theme: ""
+title: "Objecteam"
+titleCaseStyle: "AP"
+uglyURLs: false
+verbose: true
+watch: true
+description: ""
+taxonomies: ""

@@ -1,0 +1,22 @@
+= content main
+  section class="px-gutter w-100 section"
+    {{ with .Title }}
+      {{ partial "largetitle" . }}
+    {{ end }}
+    {{ with .Content }}
+      {{ partial "herotext" . }}
+    {{ end }}
+  div class="w-100 flex flex-wrap"
+    {{ if eq $.Type "what-we-do" }}
+      {{ range where .Site.Pages "Type" "activity" }}
+        {{ partial "card" . }}
+      {{ end }}
+    {{ else }}
+      {{ range .Data.Pages }}
+        {{ if eq $.Type "activity" }}
+          {{ partial "project" . }}
+        {{ else }}
+          {{ partial "card" . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}

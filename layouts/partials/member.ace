@@ -1,0 +1,31 @@
+div class="p-4 text border border-dashed text-grey-4"
+  h3 class="title-light" {{ .Title }}
+  div class="mt-2 mb-3" 
+    img src="{{ .Site.BaseURL }}{{ .Params.image }}" class="float-left mr-3 mb-3 mt-1"
+    {{ .Content }}
+  div class="pb-3"
+    {{ with .Params.email }}
+    span class="float-left mr-3 mb-3"
+      a href=mailto:{{ . }} class="text-accent-4 hover:text-accent-3 transit iconbox" target="_top"
+        {{ partial "icons/email_36.svg" . }}
+    {{ end }}
+    {{ with .Params.web }}
+    span class="float-left mr-3 mb-3"
+      a href={{ . }} class="text-accent-4 hover:text-accent-3 transit iconbox" target="_blank"
+        {{ partial "icons/computer_36.svg" . }}
+    {{ end }}
+    {{ with .Params.facebook }}
+    span class="float-left mr-3 mb-3"
+      a href={{ . }} class="text-accent-4 hover:text-accent-3 transit iconbox" target="_blank" 
+        {{ partial "facebook.svg" . }}
+    {{ end }}
+    {{ with .Params.linkedin }}
+    span class="float-left mr-3 mb-3"
+      a href={{ . }} class="text-accent-4 hover:text-accent-3 transit iconbox" target="_blank"
+        {{ partial "linkedin.svg" . }}
+    {{ end }}
+    {{ with .Params.github }}
+    span class="float-left mr-3 mb-3"
+      a href={{ . }} class="text-accent-4 hover:text-accent-3 transit iconbox" target="_blank"
+        {{ partial "github.svg" . }}
+    {{ end }}

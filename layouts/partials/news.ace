@@ -1,0 +1,8 @@
+div class="p-4 text border border-dashed text-grey-4"
+  h3 class="title-light mb-2" {{ .Title }}
+  div class="mb-2 date-small uppercase text-grey-5"
+    {{ partial "date" . }}
+  div class="mt-2" {{ .Content }}
+  {{ with .Params.download }}
+    a class="btn btn-acc mr-2 mb-2" href={{ . }} target="blank" download
+  {{ end }}

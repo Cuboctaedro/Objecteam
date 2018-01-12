@@ -1,0 +1,14 @@
+div class="mx-auto w-100 lg:w-66p xl:w-50p border border-dashed p-2"
+  {{ $pageurl := .URL | absLangURL }}
+  div class="text-center"
+    span class="iconlabel" {{ i18n "share" }}
+    span class="iconbox inline-block mx-1"
+      a href={{ print "https://facebook.com/sharer/sharer.php?u=" $pageurl "&title=" .Title }} target="blank" class="text-accent-4 hover:text-accent-3 transit"
+        {{ partial "facebook.svg" . }}
+    span class="iconbox inline-block mx-1"
+      a href={{ print "https://twitter.com/intent/tweet?source=webclient&text=" .Title "%20" $pageurl }} target="blank" class="text-accent-4 hover:text-accent-3 transit"
+        {{ partial "twitter.svg" . }}
+    span class="iconbox inline-block mx-1"
+      a href={{ print "http://pinterest.com/pin/create/link/?url=" $pageurl }} target="blank" class="text-accent-4 hover:text-accent-3 transit"
+        {{ partial "pinterest.svg" . }}
+

@@ -1,0 +1,17 @@
+= content main
+  section class="px-gutter w-100"
+    {{ with .Title }}
+      {{ partial "largetitle" . }}
+    {{ end }}
+    {{ with .Content }}
+      {{ partial "herotext" . }}
+    {{ end }}
+  div class="w-100 px-gutter flex flex-col lg:flex-row"
+    div class="w-100 lg:w-50 lg:pr-gutter mb-3"
+      {{ range where .Site.Pages "Type" "news" }}
+        {{ partial "news" . }}
+      {{ end }}
+    div class="w-100 lg:w-50 lg:pl-gutter mb-3"
+      {{ range where .Site.Pages "Type" "member" }}
+        {{ partial "member" . }}
+      {{ end }}

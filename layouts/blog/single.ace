@@ -1,0 +1,10 @@
+= content main
+  section class="px-gutter w-100"
+    {{ with .Title }}
+      {{ partial "largetitle" . }}
+    {{ end }}
+    div class="mb-6 date text-center uppercase"
+      {{ partial "date" . }}
+    div class=" text-grey-4 mx-auto w-100 lg:w-66p xl:w-50p content" {{ .Content }}
+    div class="pb-6 date text-center"
+      {{ partial "share" . }}

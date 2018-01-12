@@ -1,0 +1,1 @@
+div class="lg-text text-accent-4 lg:w-66p mb-6 mx-auto lg:w-75p xl:w-50p" {{ . }}

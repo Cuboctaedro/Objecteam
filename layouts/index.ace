@@ -1,0 +1,24 @@
+= content main
+  section class="px-gutter w-100"
+    {{ with .Content }}
+      {{ partial "herotext" . }}
+    {{ end }} 
+    div class="w-100 lg:h-45 overflow-hidden mb-6 border border-dashed flex items-center justify-center"
+      img src="{{ .Site.BaseURL }}{{ .Params.image }}" class="w-100 block"
+    
+  section class="w-100 flex flex-wrap"
+    {{ with .Site.GetPage "section" "what-we-do" }}
+      h2 class="mb-6 lg-title w-100" {{ .Title }}
+    {{ end }}
+
+    {{ range where .Site.Pages "Type" "activity" }}
+      {{ partial "card" . }}
+    {{ end }}
+
+  section class="w-100 flex flex-wrap"
+    {{ with .Site.GetPage "section" "blog" }}
+      h2 class="mb-6 lg-title w-100" {{ .Title }}
+    {{ end }}
+    {{ range where (where .Site.Pages "Section" "blog") ".Params.menu" "!=" "main"}}
+      {{ partial "post" . }}
+    {{ end }}
