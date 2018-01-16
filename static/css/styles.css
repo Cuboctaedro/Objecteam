@@ -6,7 +6,7 @@
  * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
  *
  * If using `postcss-import`, you should import this line from it's own file:
- * 
+ *
  * @import "./tailwind-preflight.css";
  *
  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
@@ -443,7 +443,7 @@ ul {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: #00796b;
+  border-color: #999999;
 }
 /**
  * Temporary reset for a change introduced in Chrome 62 but now reverted.
@@ -483,141 +483,125 @@ button,
 [role=button] {
   cursor: pointer;
 }
+@import url("//hello.myfonts.net/count/3593f3");
 
 @font-face {
-  font-family: 'Source Serif Pro';
-  font-weight: 200;
+  font-family: 'FFUnitSlabWebPro';
+  font-weight: 100;
   font-style: normal;
-  font-stretch: normal;
-  src: url('source-serif-pro/EOT/SourceSerifPro-ExtraLight.eot') format('embedded-opentype'), url('source-serif-pro/WOFF/OTF/SourceSerifPro-ExtraLight.otf.woff') format('woff'), url('source-serif-pro/WOFF2/OTF/SourceSerifPro-ExtraLight.otf.woff2') format('woff2'), url('source-serif-pro/OTF/SourceSerifPro-ExtraLight.otf') format('opentype'), url('source-serif-pro/TTF/SourceSerifPro-ExtraLight.ttf') format('truetype');
+  src: url('/fonts/unit/3593F3_0_0.woff2') format('woff2'), url('/fonts/unit/3593F3_0_0.woff') format('woff'), url('/fonts/unit/3593F3_0_0.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Source Serif Pro';
-  font-weight: 900;
-  font-style: normal;
-  font-stretch: normal;
-  src: url('source-serif-pro/EOT/SourceSerifPro-Black.eot') format('embedded-opentype'), url('source-serif-pro/WOFF/OTF/SourceSerifPro-Black.otf.woff') format('woff'), url('source-serif-pro/WOFF2/OTF/SourceSerifPro-Black.otf.woff2') format('woff2'), url('source-serif-pro/OTF/SourceSerifPro-Black.otf') format('opentype'), url('source-serif-pro/TTF/SourceSerifPro-Black.ttf') format('truetype');
+  font-family: 'FFUnitSlabWebPro';
+  font-weight: 300;
+  font-style: italic;
+  src: url('/fonts/unit/3593F3_1_0.woff2') format('woff2'), url('/fonts/unit/3593F3_1_0.woff') format('woff'), url('/fonts/unit/3593F3_1_0.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: 'FFUnitSlabWebPro';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/fonts/unit/3593F3_2_0.woff2') format('woff2'), url('/fonts/unit/3593F3_2_0.woff') format('woff'), url('/fonts/unit/3593F3_2_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FFUnitSlabWebPro';
   font-weight: 400;
   font-style: normal;
-  font-stretch: normal;
-  src: url('source-code-pro/EOT/SourceCodePro-Regular.eot') format('embedded-opentype'), url('source-code-pro/WOFF2/TTF/SourceCodePro-Regular.ttf.woff2') format('woff2'), url('source-code-pro/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'), url('source-code-pro/OTF/SourceCodePro-Regular.otf') format('opentype'), url('source-code-pro/TTF/SourceCodePro-Regular.ttf') format('truetype');
+  src: url('/fonts/unit/3593F3_3_0.woff2') format('woff2'), url('/fonts/unit/3593F3_3_0.woff') format('woff'), url('/fonts/unit/3593F3_3_0.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'FFUnitSlabWebPro';
   font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  src: url('source-sans-pro/EOT/SourceSansPro-Regular.eot') format('embedded-opentype'), url('source-sans-pro/WOFF2/TTF/SourceSansPro-Regular.ttf.woff2') format('woff2'), url('source-sans-pro/WOFF/OTF/SourceSansPro-Regular.otf.woff') format('woff'), url('source-sans-pro/OTF/SourceSansPro-Regular.otf') format('opentype'), url('source-sans-pro/TTF/SourceSansPro-Regular.ttf') format('truetype');
+  font-style: italic;
+  src: url('/fonts/unit/3593F3_4_0.woff2') format('woff2'), url('/fonts/unit/3593F3_4_0.woff') format('woff'), url('/fonts/unit/3593F3_4_0.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  font-weight: 900;
+  font-family: 'Iosevka';
+  font-weight: 500;
   font-style: normal;
-  font-stretch: normal;
-  src: url('source-sans-pro/EOT/SourceSansPro-Black.eot') format('embedded-opentype'), url('source-sans-pro/WOFF2/TTF/SourceSansPro-Black.ttf.woff2') format('woff2'), url('source-sans-pro/WOFF/OTF/SourceSansPro-Black.otf.woff') format('woff'), url('source-sans-pro/OTF/SourceSansPro-Black.otf') format('opentype'), url('source-sans-pro/TTF/SourceSansPro-Black.ttf') format('truetype');
+  src: url('/fonts/iosevka/iosevka-medium.woff2') format('woff2'), url('/fonts/iosevka/iosevka-medium.woff') format('woff'), url('/fonts/iosevka/iosevka-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/fonts/iosevka/iosevka-light.woff2') format('woff2'), url('/fonts/iosevka/iosevka-light.woff') format('woff'), url('/fonts/iosevka/iosevka-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/fonts/iosevka/iosevka-bold.woff2') format('woff2'), url('/fonts/iosevka/iosevka-bold.woff') format('woff'), url('/fonts/iosevka/iosevka-bold.ttf') format('truetype');
 }
 
 .text {
-  font-family: Source Sans Pro, Frutiger, Frutiger Linotype, Calibri, Geneva, Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.125rem;
   line-height: 1.5;
+  color: #333333;
 }
 
-.lg-text {
-  font-family: Source Serif Pro, Constantia, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-  font-weight: 200;
-  font-size: 1.5rem;
-  line-height: 1.6666;
-  text-align: center;
+.head {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 .title {
-  font-family: Source Serif Pro, Constantia, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-  color: #212121;
-  font-weight: 900;
   font-size: 1.5rem;
-  line-height: 1.3333;
+  line-height: 1.33333;
+  font-weight: 500;
+  font-family: Iosevka, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
-.lg-title {
-  font-family: Source Serif Pro, Constantia, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-  color: #00796b;
-  font-weight: 200;
-  font-size: 3rem;
-  line-height: 1.1666;
-  text-align: center;
-}
-
-.caption {
-  font-family: Source Code Pro, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  color: #212121;
-  font-weight: 400;
-  font-size: .75rem;
-  line-height: 2;
-}
-
-.date-small {
-  font-family: Source Code Pro, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  color: #212121;
-  font-weight: 400;
+.small {
   font-size: .875rem;
   line-height: 1.71428;
 }
 
 .date {
-  font-family: Source Code Pro, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  color: #212121;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.label {
-  font-family: Source Code Pro, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  color: #00796b;
-  font-weight: 400;
+  font-family: Iosevka, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-weight: 500;
   font-size: .875rem;
   line-height: 1.71428;
+  text-transform: uppercase;
 }
 
-.title-light {
-  font-family: Source Serif Pro, Constantia, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
-  color: #004d40;
-  font-weight: 900;
-  font-size: 1.5rem;
-  line-height: 1.3333;
+.maintext {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-family: Iosevka, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-weight: 300;
 }
 
 .btn {
-  font-family: Source Code Pro, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-family: Iosevka, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   display: inline-block;
+  letter-spacing: 0.05em;
   height: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: .875rem;
   line-height: 2.2857;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   text-align: center;
 }
 
 .btn-acc {
-  color: #f5f5f5;
-  background-color: #00796b;
+  color: #ffffff;
+  background-color: #000000;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .btn-acc:hover {
-  background-color: #009688;
+  color: #ffffff;
+  background-color: #e7312d;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -631,8 +615,40 @@ button,
 
 .iconlabel {
   margin-left: 0.5rem;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: .875rem;
+  font-family: Iosevka, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   line-height: 1.875;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: dashed;
+}
+
+.card:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+a {
+  color: #000000;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+a:hover {
+  color: #e7312d;
+}
+
+::-moz-selection {
+  color: #ffffff;
+  background-color: #e7312d;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #e7312d;
 }
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -655,7 +671,7 @@ button,
  * config file.
  *
  * If using `postcss-import`, you should import this line from it's own file:
- * 
+ *
  * @import "./tailwind-utilities.css";
  *
  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
@@ -724,96 +740,56 @@ a {
   background-color: transparent;
 }
 
-.bg-grey-1 {
-  background-color: #f5f5f5;
-}
-
-.bg-grey-2 {
-  background-color: #e0e0e0;
-}
-
-.bg-grey-3 {
-  background-color: #9e9e9e;
-}
-
-.bg-grey-4 {
-  background-color: #616161;
-}
-
-.bg-grey-5 {
-  background-color: #212121;
-}
-
-.bg-accent-1 {
-  background-color: #b2dfdb;
-}
-
-.bg-accent-2 {
-  background-color: #4db6ac;
-}
-
-.bg-accent-3 {
-  background-color: #009688;
-}
-
-.bg-accent-4 {
-  background-color: #00796b;
-}
-
-.bg-accent-5 {
-  background-color: #004d40;
-}
-
 .bg-white {
   background-color: #ffffff;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-textcolor {
+  background-color: #333333;
+}
+
+.bg-bordercolor {
+  background-color: #999999;
+}
+
+.bg-accent {
+  background-color: #e7312d;
+}
+
+.bg-grey {
+  background-color: #fafafa;
 }
 
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
 
-.hover\:bg-grey-1:hover {
-  background-color: #f5f5f5;
-}
-
-.hover\:bg-grey-2:hover {
-  background-color: #e0e0e0;
-}
-
-.hover\:bg-grey-3:hover {
-  background-color: #9e9e9e;
-}
-
-.hover\:bg-grey-4:hover {
-  background-color: #616161;
-}
-
-.hover\:bg-grey-5:hover {
-  background-color: #212121;
-}
-
-.hover\:bg-accent-1:hover {
-  background-color: #b2dfdb;
-}
-
-.hover\:bg-accent-2:hover {
-  background-color: #4db6ac;
-}
-
-.hover\:bg-accent-3:hover {
-  background-color: #009688;
-}
-
-.hover\:bg-accent-4:hover {
-  background-color: #00796b;
-}
-
-.hover\:bg-accent-5:hover {
-  background-color: #004d40;
-}
-
 .hover\:bg-white:hover {
   background-color: #ffffff;
+}
+
+.hover\:bg-black:hover {
+  background-color: #000000;
+}
+
+.hover\:bg-textcolor:hover {
+  background-color: #333333;
+}
+
+.hover\:bg-bordercolor:hover {
+  background-color: #999999;
+}
+
+.hover\:bg-accent:hover {
+  background-color: #e7312d;
+}
+
+.hover\:bg-grey:hover {
+  background-color: #fafafa;
 }
 
 .bg-bottom {
@@ -880,96 +856,56 @@ a {
   border-color: transparent;
 }
 
-.border-grey-1 {
-  border-color: #f5f5f5;
-}
-
-.border-grey-2 {
-  border-color: #e0e0e0;
-}
-
-.border-grey-3 {
-  border-color: #9e9e9e;
-}
-
-.border-grey-4 {
-  border-color: #616161;
-}
-
-.border-grey-5 {
-  border-color: #212121;
-}
-
-.border-accent-1 {
-  border-color: #b2dfdb;
-}
-
-.border-accent-2 {
-  border-color: #4db6ac;
-}
-
-.border-accent-3 {
-  border-color: #009688;
-}
-
-.border-accent-4 {
-  border-color: #00796b;
-}
-
-.border-accent-5 {
-  border-color: #004d40;
-}
-
 .border-white {
   border-color: #ffffff;
+}
+
+.border-black {
+  border-color: #000000;
+}
+
+.border-textcolor {
+  border-color: #333333;
+}
+
+.border-bordercolor {
+  border-color: #999999;
+}
+
+.border-accent {
+  border-color: #e7312d;
+}
+
+.border-grey {
+  border-color: #fafafa;
 }
 
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
 
-.hover\:border-grey-1:hover {
-  border-color: #f5f5f5;
-}
-
-.hover\:border-grey-2:hover {
-  border-color: #e0e0e0;
-}
-
-.hover\:border-grey-3:hover {
-  border-color: #9e9e9e;
-}
-
-.hover\:border-grey-4:hover {
-  border-color: #616161;
-}
-
-.hover\:border-grey-5:hover {
-  border-color: #212121;
-}
-
-.hover\:border-accent-1:hover {
-  border-color: #b2dfdb;
-}
-
-.hover\:border-accent-2:hover {
-  border-color: #4db6ac;
-}
-
-.hover\:border-accent-3:hover {
-  border-color: #009688;
-}
-
-.hover\:border-accent-4:hover {
-  border-color: #00796b;
-}
-
-.hover\:border-accent-5:hover {
-  border-color: #004d40;
-}
-
 .hover\:border-white:hover {
   border-color: #ffffff;
+}
+
+.hover\:border-black:hover {
+  border-color: #000000;
+}
+
+.hover\:border-textcolor:hover {
+  border-color: #333333;
+}
+
+.hover\:border-bordercolor:hover {
+  border-color: #999999;
+}
+
+.hover\:border-accent:hover {
+  border-color: #e7312d;
+}
+
+.hover\:border-grey:hover {
+  border-color: #fafafa;
 }
 
 .rounded-none {
@@ -1152,6 +1088,10 @@ a {
   border-width: 0;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1170,6 +1110,22 @@ a {
 
 .border-l-0 {
   border-left-width: 0;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
 }
 
 .border-t {
@@ -1399,26 +1355,42 @@ a {
 }
 
 .font-mono {
-  font-family: Source Code Pro, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-}
-
-.font-serif {
-  font-family: Source Serif Pro, Constantia, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-family: Iosevka, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .font-sans {
-  font-family: Source Sans Pro, Frutiger, Frutiger Linotype, Calibri, Geneva, Arial, sans-serif;
+  font-family: Roboto, Frutiger, Frutiger Linotype, Calibri, Geneva, Arial, sans-serif;
 }
 
-.font-x-light {
+.font-serif {
+  font-family: ff-meta-serif-web-pro, Fira Sans, Tinos, Alegreya, FFUnitSlabWebPro;
+}
+
+.font-1 {
+  font-weight: 100;
+}
+
+.font-2 {
   font-weight: 200;
 }
 
-.font-normal {
+.font-3 {
+  font-weight: 300;
+}
+
+.font-4 {
   font-weight: 400;
 }
 
-.font-black {
+.font-5 {
+  font-weight: 500;
+}
+
+.font-7 {
+  font-weight: 700;
+}
+
+.font-9 {
   font-weight: 900;
 }
 
@@ -1448,6 +1420,10 @@ a {
 
 .h-9 {
   height: 4.5rem;
+}
+
+.h-12 {
+  height: 6rem;
 }
 
 .h-15 {
@@ -1518,36 +1494,24 @@ a {
   height: 100vw;
 }
 
-.leading-1 {
-  line-height: 1;
+.h-square {
+  height: 16.5rem;
 }
 
-.leading-2 {
-  line-height: 2;
-}
-
-.leading-14-24 {
+.leading-small {
   line-height: 1.71428;
 }
 
-.leading-normal {
+.leading-text {
   line-height: 1.5;
 }
 
-.leading-48-56 {
-  line-height: 1.1666;
+.leading-head {
+  line-height: 1.6;
 }
 
-.leading-18-24 {
-  line-height: 1.3333;
-}
-
-.leading-24-32 {
-  line-height: 1.3333;
-}
-
-.leading-24-40 {
-  line-height: 1.6666;
+.leading-title {
+  line-height: 1.33333;
 }
 
 .leading-button {
@@ -2236,6 +2200,10 @@ a {
   padding: 3rem;
 }
 
+.p-12 {
+  padding: 6rem;
+}
+
 .p-px {
   padding: 1px;
 }
@@ -2302,6 +2270,16 @@ a {
 .px-6 {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.py-12 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-12 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .py-px {
@@ -2418,6 +2396,22 @@ a {
 
 .pl-6 {
   padding-left: 3rem;
+}
+
+.pt-12 {
+  padding-top: 6rem;
+}
+
+.pr-12 {
+  padding-right: 6rem;
+}
+
+.pb-12 {
+  padding-bottom: 6rem;
+}
+
+.pl-12 {
+  padding-left: 6rem;
 }
 
 .pt-px {
@@ -2608,120 +2602,76 @@ a {
   color: transparent;
 }
 
-.text-grey-1 {
-  color: #f5f5f5;
-}
-
-.text-grey-2 {
-  color: #e0e0e0;
-}
-
-.text-grey-3 {
-  color: #9e9e9e;
-}
-
-.text-grey-4 {
-  color: #616161;
-}
-
-.text-grey-5 {
-  color: #212121;
-}
-
-.text-accent-1 {
-  color: #b2dfdb;
-}
-
-.text-accent-2 {
-  color: #4db6ac;
-}
-
-.text-accent-3 {
-  color: #009688;
-}
-
-.text-accent-4 {
-  color: #00796b;
-}
-
-.text-accent-5 {
-  color: #004d40;
-}
-
 .text-white {
   color: #ffffff;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-textcolor {
+  color: #333333;
+}
+
+.text-bordercolor {
+  color: #999999;
+}
+
+.text-accent {
+  color: #e7312d;
+}
+
+.text-grey {
+  color: #fafafa;
 }
 
 .hover\:text-transparent:hover {
   color: transparent;
 }
 
-.hover\:text-grey-1:hover {
-  color: #f5f5f5;
-}
-
-.hover\:text-grey-2:hover {
-  color: #e0e0e0;
-}
-
-.hover\:text-grey-3:hover {
-  color: #9e9e9e;
-}
-
-.hover\:text-grey-4:hover {
-  color: #616161;
-}
-
-.hover\:text-grey-5:hover {
-  color: #212121;
-}
-
-.hover\:text-accent-1:hover {
-  color: #b2dfdb;
-}
-
-.hover\:text-accent-2:hover {
-  color: #4db6ac;
-}
-
-.hover\:text-accent-3:hover {
-  color: #009688;
-}
-
-.hover\:text-accent-4:hover {
-  color: #00796b;
-}
-
-.hover\:text-accent-5:hover {
-  color: #004d40;
-}
-
 .hover\:text-white:hover {
   color: #ffffff;
 }
 
-.text-12 {
-  font-size: .75rem;
+.hover\:text-black:hover {
+  color: #000000;
 }
 
-.text-14 {
+.hover\:text-textcolor:hover {
+  color: #333333;
+}
+
+.hover\:text-bordercolor:hover {
+  color: #999999;
+}
+
+.hover\:text-accent:hover {
+  color: #e7312d;
+}
+
+.hover\:text-grey:hover {
+  color: #fafafa;
+}
+
+.text-small {
   font-size: .875rem;
 }
 
-.text-16 {
+.text-text {
   font-size: 1rem;
 }
 
-.text-18 {
+.text-main {
   font-size: 1.125rem;
 }
 
-.text-24 {
-  font-size: 1.5rem;
+.text-head {
+  font-size: 1.25rem;
 }
 
-.text-48 {
-  font-size: 3rem;
+.text-title {
+  font-size: 1.5rem;
 }
 
 .italic {
@@ -2880,6 +2830,10 @@ a {
   width: 3rem;
 }
 
+.w-8 {
+  width: 4rem;
+}
+
 .w-9 {
   width: 4.5rem;
 }
@@ -2984,19 +2938,19 @@ a {
   z-index: auto;
 }
 
-.transit {
+.transit,
+.card {
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .content p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 svg {
   fill: currentColor;
   vertical-align: bottom;
 }
-
 
 /**
  * Here you would add any custom utilities you need that don't come out of the
@@ -3012,7 +2966,6 @@ svg {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
-
 
 @media (min-width: 320px) {
   .sm\:list-reset {
@@ -3276,6 +3229,10 @@ svg {
     border-width: 0;
   }
 
+  .sm\:border-2 {
+    border-width: 2px;
+  }
+
   .sm\:border {
     border-width: 1px;
   }
@@ -3294,6 +3251,22 @@ svg {
 
   .sm\:border-l-0 {
     border-left-width: 0;
+  }
+
+  .sm\:border-t-2 {
+    border-top-width: 2px;
+  }
+
+  .sm\:border-r-2 {
+    border-right-width: 2px;
+  }
+
+  .sm\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .sm\:border-l-2 {
+    border-left-width: 2px;
   }
 
   .sm\:border-t {
@@ -3506,15 +3479,31 @@ svg {
     clear: both;
   }
 
-  .sm\:font-x-light {
+  .sm\:font-1 {
+    font-weight: 100;
+  }
+
+  .sm\:font-2 {
     font-weight: 200;
   }
 
-  .sm\:font-normal {
+  .sm\:font-3 {
+    font-weight: 300;
+  }
+
+  .sm\:font-4 {
     font-weight: 400;
   }
 
-  .sm\:font-black {
+  .sm\:font-5 {
+    font-weight: 500;
+  }
+
+  .sm\:font-7 {
+    font-weight: 700;
+  }
+
+  .sm\:font-9 {
     font-weight: 900;
   }
 
@@ -3544,6 +3533,10 @@ svg {
 
   .sm\:h-9 {
     height: 4.5rem;
+  }
+
+  .sm\:h-12 {
+    height: 6rem;
   }
 
   .sm\:h-15 {
@@ -3614,36 +3607,24 @@ svg {
     height: 100vw;
   }
 
-  .sm\:leading-1 {
-    line-height: 1;
+  .sm\:h-square {
+    height: 16.5rem;
   }
 
-  .sm\:leading-2 {
-    line-height: 2;
-  }
-
-  .sm\:leading-14-24 {
+  .sm\:leading-small {
     line-height: 1.71428;
   }
 
-  .sm\:leading-normal {
+  .sm\:leading-text {
     line-height: 1.5;
   }
 
-  .sm\:leading-48-56 {
-    line-height: 1.1666;
+  .sm\:leading-head {
+    line-height: 1.6;
   }
 
-  .sm\:leading-18-24 {
-    line-height: 1.3333;
-  }
-
-  .sm\:leading-24-32 {
-    line-height: 1.3333;
-  }
-
-  .sm\:leading-24-40 {
-    line-height: 1.6666;
+  .sm\:leading-title {
+    line-height: 1.33333;
   }
 
   .sm\:leading-button {
@@ -4312,6 +4293,10 @@ svg {
     padding: 3rem;
   }
 
+  .sm\:p-12 {
+    padding: 6rem;
+  }
+
   .sm\:p-px {
     padding: 1px;
   }
@@ -4378,6 +4363,16 @@ svg {
   .sm\:px-6 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .sm\:py-12 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .sm\:py-px {
@@ -4494,6 +4489,22 @@ svg {
 
   .sm\:pl-6 {
     padding-left: 3rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 6rem;
+  }
+
+  .sm\:pr-12 {
+    padding-right: 6rem;
+  }
+
+  .sm\:pb-12 {
+    padding-bottom: 6rem;
+  }
+
+  .sm\:pl-12 {
+    padding-left: 6rem;
   }
 
   .sm\:pt-px {
@@ -4672,28 +4683,24 @@ svg {
     text-align: justify;
   }
 
-  .sm\:text-12 {
-    font-size: .75rem;
-  }
-
-  .sm\:text-14 {
+  .sm\:text-small {
     font-size: .875rem;
   }
 
-  .sm\:text-16 {
+  .sm\:text-text {
     font-size: 1rem;
   }
 
-  .sm\:text-18 {
+  .sm\:text-main {
     font-size: 1.125rem;
   }
 
-  .sm\:text-24 {
-    font-size: 1.5rem;
+  .sm\:text-head {
+    font-size: 1.25rem;
   }
 
-  .sm\:text-48 {
-    font-size: 3rem;
+  .sm\:text-title {
+    font-size: 1.5rem;
   }
 
   .sm\:align-baseline {
@@ -4784,6 +4791,10 @@ svg {
 
   .sm\:w-6 {
     width: 3rem;
+  }
+
+  .sm\:w-8 {
+    width: 4rem;
   }
 
   .sm\:w-9 {
@@ -5153,6 +5164,10 @@ svg {
     border-width: 0;
   }
 
+  .md\:border-2 {
+    border-width: 2px;
+  }
+
   .md\:border {
     border-width: 1px;
   }
@@ -5171,6 +5186,22 @@ svg {
 
   .md\:border-l-0 {
     border-left-width: 0;
+  }
+
+  .md\:border-t-2 {
+    border-top-width: 2px;
+  }
+
+  .md\:border-r-2 {
+    border-right-width: 2px;
+  }
+
+  .md\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .md\:border-l-2 {
+    border-left-width: 2px;
   }
 
   .md\:border-t {
@@ -5383,15 +5414,31 @@ svg {
     clear: both;
   }
 
-  .md\:font-x-light {
+  .md\:font-1 {
+    font-weight: 100;
+  }
+
+  .md\:font-2 {
     font-weight: 200;
   }
 
-  .md\:font-normal {
+  .md\:font-3 {
+    font-weight: 300;
+  }
+
+  .md\:font-4 {
     font-weight: 400;
   }
 
-  .md\:font-black {
+  .md\:font-5 {
+    font-weight: 500;
+  }
+
+  .md\:font-7 {
+    font-weight: 700;
+  }
+
+  .md\:font-9 {
     font-weight: 900;
   }
 
@@ -5421,6 +5468,10 @@ svg {
 
   .md\:h-9 {
     height: 4.5rem;
+  }
+
+  .md\:h-12 {
+    height: 6rem;
   }
 
   .md\:h-15 {
@@ -5491,36 +5542,24 @@ svg {
     height: 100vw;
   }
 
-  .md\:leading-1 {
-    line-height: 1;
+  .md\:h-square {
+    height: 16.5rem;
   }
 
-  .md\:leading-2 {
-    line-height: 2;
-  }
-
-  .md\:leading-14-24 {
+  .md\:leading-small {
     line-height: 1.71428;
   }
 
-  .md\:leading-normal {
+  .md\:leading-text {
     line-height: 1.5;
   }
 
-  .md\:leading-48-56 {
-    line-height: 1.1666;
+  .md\:leading-head {
+    line-height: 1.6;
   }
 
-  .md\:leading-18-24 {
-    line-height: 1.3333;
-  }
-
-  .md\:leading-24-32 {
-    line-height: 1.3333;
-  }
-
-  .md\:leading-24-40 {
-    line-height: 1.6666;
+  .md\:leading-title {
+    line-height: 1.33333;
   }
 
   .md\:leading-button {
@@ -6189,6 +6228,10 @@ svg {
     padding: 3rem;
   }
 
+  .md\:p-12 {
+    padding: 6rem;
+  }
+
   .md\:p-px {
     padding: 1px;
   }
@@ -6255,6 +6298,16 @@ svg {
   .md\:px-6 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:py-12 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:px-12 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:py-px {
@@ -6371,6 +6424,22 @@ svg {
 
   .md\:pl-6 {
     padding-left: 3rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 6rem;
+  }
+
+  .md\:pr-12 {
+    padding-right: 6rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 6rem;
+  }
+
+  .md\:pl-12 {
+    padding-left: 6rem;
   }
 
   .md\:pt-px {
@@ -6549,28 +6618,24 @@ svg {
     text-align: justify;
   }
 
-  .md\:text-12 {
-    font-size: .75rem;
-  }
-
-  .md\:text-14 {
+  .md\:text-small {
     font-size: .875rem;
   }
 
-  .md\:text-16 {
+  .md\:text-text {
     font-size: 1rem;
   }
 
-  .md\:text-18 {
+  .md\:text-main {
     font-size: 1.125rem;
   }
 
-  .md\:text-24 {
-    font-size: 1.5rem;
+  .md\:text-head {
+    font-size: 1.25rem;
   }
 
-  .md\:text-48 {
-    font-size: 3rem;
+  .md\:text-title {
+    font-size: 1.5rem;
   }
 
   .md\:align-baseline {
@@ -6661,6 +6726,10 @@ svg {
 
   .md\:w-6 {
     width: 3rem;
+  }
+
+  .md\:w-8 {
+    width: 4rem;
   }
 
   .md\:w-9 {
@@ -7030,6 +7099,10 @@ svg {
     border-width: 0;
   }
 
+  .lg\:border-2 {
+    border-width: 2px;
+  }
+
   .lg\:border {
     border-width: 1px;
   }
@@ -7048,6 +7121,22 @@ svg {
 
   .lg\:border-l-0 {
     border-left-width: 0;
+  }
+
+  .lg\:border-t-2 {
+    border-top-width: 2px;
+  }
+
+  .lg\:border-r-2 {
+    border-right-width: 2px;
+  }
+
+  .lg\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .lg\:border-l-2 {
+    border-left-width: 2px;
   }
 
   .lg\:border-t {
@@ -7260,15 +7349,31 @@ svg {
     clear: both;
   }
 
-  .lg\:font-x-light {
+  .lg\:font-1 {
+    font-weight: 100;
+  }
+
+  .lg\:font-2 {
     font-weight: 200;
   }
 
-  .lg\:font-normal {
+  .lg\:font-3 {
+    font-weight: 300;
+  }
+
+  .lg\:font-4 {
     font-weight: 400;
   }
 
-  .lg\:font-black {
+  .lg\:font-5 {
+    font-weight: 500;
+  }
+
+  .lg\:font-7 {
+    font-weight: 700;
+  }
+
+  .lg\:font-9 {
     font-weight: 900;
   }
 
@@ -7298,6 +7403,10 @@ svg {
 
   .lg\:h-9 {
     height: 4.5rem;
+  }
+
+  .lg\:h-12 {
+    height: 6rem;
   }
 
   .lg\:h-15 {
@@ -7368,36 +7477,24 @@ svg {
     height: 100vw;
   }
 
-  .lg\:leading-1 {
-    line-height: 1;
+  .lg\:h-square {
+    height: 16.5rem;
   }
 
-  .lg\:leading-2 {
-    line-height: 2;
-  }
-
-  .lg\:leading-14-24 {
+  .lg\:leading-small {
     line-height: 1.71428;
   }
 
-  .lg\:leading-normal {
+  .lg\:leading-text {
     line-height: 1.5;
   }
 
-  .lg\:leading-48-56 {
-    line-height: 1.1666;
+  .lg\:leading-head {
+    line-height: 1.6;
   }
 
-  .lg\:leading-18-24 {
-    line-height: 1.3333;
-  }
-
-  .lg\:leading-24-32 {
-    line-height: 1.3333;
-  }
-
-  .lg\:leading-24-40 {
-    line-height: 1.6666;
+  .lg\:leading-title {
+    line-height: 1.33333;
   }
 
   .lg\:leading-button {
@@ -8066,6 +8163,10 @@ svg {
     padding: 3rem;
   }
 
+  .lg\:p-12 {
+    padding: 6rem;
+  }
+
   .lg\:p-px {
     padding: 1px;
   }
@@ -8132,6 +8233,16 @@ svg {
   .lg\:px-6 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:py-px {
@@ -8248,6 +8359,22 @@ svg {
 
   .lg\:pl-6 {
     padding-left: 3rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 6rem;
+  }
+
+  .lg\:pr-12 {
+    padding-right: 6rem;
+  }
+
+  .lg\:pb-12 {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 6rem;
   }
 
   .lg\:pt-px {
@@ -8426,28 +8553,24 @@ svg {
     text-align: justify;
   }
 
-  .lg\:text-12 {
-    font-size: .75rem;
-  }
-
-  .lg\:text-14 {
+  .lg\:text-small {
     font-size: .875rem;
   }
 
-  .lg\:text-16 {
+  .lg\:text-text {
     font-size: 1rem;
   }
 
-  .lg\:text-18 {
+  .lg\:text-main {
     font-size: 1.125rem;
   }
 
-  .lg\:text-24 {
-    font-size: 1.5rem;
+  .lg\:text-head {
+    font-size: 1.25rem;
   }
 
-  .lg\:text-48 {
-    font-size: 3rem;
+  .lg\:text-title {
+    font-size: 1.5rem;
   }
 
   .lg\:align-baseline {
@@ -8538,6 +8661,10 @@ svg {
 
   .lg\:w-6 {
     width: 3rem;
+  }
+
+  .lg\:w-8 {
+    width: 4rem;
   }
 
   .lg\:w-9 {
@@ -8907,6 +9034,10 @@ svg {
     border-width: 0;
   }
 
+  .xl\:border-2 {
+    border-width: 2px;
+  }
+
   .xl\:border {
     border-width: 1px;
   }
@@ -8925,6 +9056,22 @@ svg {
 
   .xl\:border-l-0 {
     border-left-width: 0;
+  }
+
+  .xl\:border-t-2 {
+    border-top-width: 2px;
+  }
+
+  .xl\:border-r-2 {
+    border-right-width: 2px;
+  }
+
+  .xl\:border-b-2 {
+    border-bottom-width: 2px;
+  }
+
+  .xl\:border-l-2 {
+    border-left-width: 2px;
   }
 
   .xl\:border-t {
@@ -9137,15 +9284,31 @@ svg {
     clear: both;
   }
 
-  .xl\:font-x-light {
+  .xl\:font-1 {
+    font-weight: 100;
+  }
+
+  .xl\:font-2 {
     font-weight: 200;
   }
 
-  .xl\:font-normal {
+  .xl\:font-3 {
+    font-weight: 300;
+  }
+
+  .xl\:font-4 {
     font-weight: 400;
   }
 
-  .xl\:font-black {
+  .xl\:font-5 {
+    font-weight: 500;
+  }
+
+  .xl\:font-7 {
+    font-weight: 700;
+  }
+
+  .xl\:font-9 {
     font-weight: 900;
   }
 
@@ -9175,6 +9338,10 @@ svg {
 
   .xl\:h-9 {
     height: 4.5rem;
+  }
+
+  .xl\:h-12 {
+    height: 6rem;
   }
 
   .xl\:h-15 {
@@ -9245,36 +9412,24 @@ svg {
     height: 100vw;
   }
 
-  .xl\:leading-1 {
-    line-height: 1;
+  .xl\:h-square {
+    height: 16.5rem;
   }
 
-  .xl\:leading-2 {
-    line-height: 2;
-  }
-
-  .xl\:leading-14-24 {
+  .xl\:leading-small {
     line-height: 1.71428;
   }
 
-  .xl\:leading-normal {
+  .xl\:leading-text {
     line-height: 1.5;
   }
 
-  .xl\:leading-48-56 {
-    line-height: 1.1666;
+  .xl\:leading-head {
+    line-height: 1.6;
   }
 
-  .xl\:leading-18-24 {
-    line-height: 1.3333;
-  }
-
-  .xl\:leading-24-32 {
-    line-height: 1.3333;
-  }
-
-  .xl\:leading-24-40 {
-    line-height: 1.6666;
+  .xl\:leading-title {
+    line-height: 1.33333;
   }
 
   .xl\:leading-button {
@@ -9943,6 +10098,10 @@ svg {
     padding: 3rem;
   }
 
+  .xl\:p-12 {
+    padding: 6rem;
+  }
+
   .xl\:p-px {
     padding: 1px;
   }
@@ -10009,6 +10168,16 @@ svg {
   .xl\:px-6 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:py-12 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:px-12 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .xl\:py-px {
@@ -10125,6 +10294,22 @@ svg {
 
   .xl\:pl-6 {
     padding-left: 3rem;
+  }
+
+  .xl\:pt-12 {
+    padding-top: 6rem;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 6rem;
+  }
+
+  .xl\:pb-12 {
+    padding-bottom: 6rem;
+  }
+
+  .xl\:pl-12 {
+    padding-left: 6rem;
   }
 
   .xl\:pt-px {
@@ -10303,28 +10488,24 @@ svg {
     text-align: justify;
   }
 
-  .xl\:text-12 {
-    font-size: .75rem;
-  }
-
-  .xl\:text-14 {
+  .xl\:text-small {
     font-size: .875rem;
   }
 
-  .xl\:text-16 {
+  .xl\:text-text {
     font-size: 1rem;
   }
 
-  .xl\:text-18 {
+  .xl\:text-main {
     font-size: 1.125rem;
   }
 
-  .xl\:text-24 {
-    font-size: 1.5rem;
+  .xl\:text-head {
+    font-size: 1.25rem;
   }
 
-  .xl\:text-48 {
-    font-size: 3rem;
+  .xl\:text-title {
+    font-size: 1.5rem;
   }
 
   .xl\:align-baseline {
@@ -10415,6 +10596,10 @@ svg {
 
   .xl\:w-6 {
     width: 3rem;
+  }
+
+  .xl\:w-8 {
+    width: 4rem;
   }
 
   .xl\:w-9 {

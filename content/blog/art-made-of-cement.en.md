@@ -1,5 +1,5 @@
 ---
-title: “Art made of Cement” exhibition at Fouar, Athens
+title: Art made of Cement exhibition at Fouar, Athens
 date: 2016-04-02
 ---
 

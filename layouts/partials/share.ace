@@ -1,7 +1,7 @@
-div class="mx-auto w-100 lg:w-66p xl:w-50p border border-dashed p-2"
+div class=" w-100 lg:w-66p xl:w-50p card p-2"
   {{ $pageurl := .URL | absLangURL }}
-  div class="text-center"
-    span class="iconlabel" {{ i18n "share" }}
+  div class=""
+    span class="iconlabel small" {{ i18n "share" }}
     span class="iconbox inline-block mx-1"
       a href={{ print "https://facebook.com/sharer/sharer.php?u=" $pageurl "&title=" .Title }} target="blank" class="text-accent-4 hover:text-accent-3 transit"
         {{ partial "facebook.svg" . }}

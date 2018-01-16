@@ -1,7 +1,10 @@
 = content main
-  h1 class="hidden" {{ .Title }}
+  section class="px-gutter w-100"
+    {{ with .Content }}
+      {{ partial "herotext" . }}
+    {{ end }}
 
-  div class="w-100 flex flex-wrap"
+  section class="w-100 flex flex-wrap"
     {{ range .Data.Pages }}
       {{ partial "post" . }}
     {{ end }}

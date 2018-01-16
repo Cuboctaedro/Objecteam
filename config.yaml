@@ -20,7 +20,7 @@ languages:
     el:
         weight: 2
         languageName : "GR"
-summaryLength: 70
+summaryLength: 30
 metaDataFormat: "yaml"
 paginate: 10
 paginatePath: "page"

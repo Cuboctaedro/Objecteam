@@ -7,16 +7,16 @@ html lang={{ .Site.Language.Lang }}
     title {{ .Title }} - {{ .Site.Title }}
     meta name="author" content="name"
     meta name="description" content={{ .Site.Params.description }}
+    link rel="stylesheet" href="https://use.typekit.net/spq8vsd.css"
+    link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400&amp;subset=greek" rel="stylesheet"
     link rel="stylesheet" href="/css/styles.css" type="text/css"
-  body class="text bg-grey-1"
-    {{ partial "languages" . }}
-    div class="sm:w-sm md:w-md lg:w-lg xl:w-xl px-gutter mx-auto mb-3 pb-6 pt-3 mt-6 shadow-1 bg-white"
-      header class="w-100 flex flex-wrap mb-6"
-        h1 class="px-gutter w-100 md:w-50p lg:w-33p xl:w-25p"
-          a href={{ "/" | absLangURL }} class="text-accent-4 hover:text-accent-3" 
-            {{ partial "logo.svg" . }}
-        {{ partial "menu" . }}
-        div class="w-100 px-gutter"
-          hr class="border-b border-dashed"
-
+  body class="text font-serif font-3 bg-grey text-grey-8"
+    {{ partial "topbar" . }}
+    div class="sm:w-sm md:w-md lg:w-lg xl:w-xl px-gutter mx-auto mb-3 pb-6 pt-12 mt-3"
+      // header class="w-100 flex flex-wrap mb-6"
+      //   h1 class="px-gutter w-100 md:w-50p lg:w-33p xl:w-25p"
+      //     a href={{ "/" | absLangURL }} class="" Objecteam
+      //   {{ partial "menu" . }}
+      //   div class="w-100 px-gutter"
+      //     hr class="border-b border-dashed"
       = yield main

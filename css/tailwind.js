@@ -43,17 +43,12 @@ View the full documentation at https://tailwindcss.com.
 
 let colors = {
     'transparent': 'transparent',
-    'grey-1': '#F5F5F5',
-    'grey-2': '#E0E0E0',
-    'grey-3': '#9E9E9E',
-    'grey-4': '#616161',
-    'grey-5': '#212121',
-    'accent-1': '#B2DFDB',
-    'accent-2': '#4DB6AC',
-    'accent-3': '#009688',
-    'accent-4': '#00796B',
-    'accent-5': '#004D40',
-    'white': '#ffffff',
+    'white':   "#ffffff",
+    'black':  '#000000',
+    'textcolor': '#333333',
+    'bordercolor': '#999999',
+    'accent': '#E7312D',
+    'grey': '#fafafa',
 }
 
 module.exports = {
@@ -119,7 +114,7 @@ module.exports = {
 
   fonts: {
     'mono': [
-        'Source Code Pro',
+        'Iosevka',
         'Menlo',
         'Monaco',
         'Consolas',
@@ -127,17 +122,8 @@ module.exports = {
         'Courier New',
         'monospace',
     ],
-    'serif': [
-        'Source Serif Pro',
-        'Constantia',
-        'DejaVu Serif',
-        'Bitstream Vera Serif',
-        'Liberation Serif',
-        'Georgia',
-        'serif',
-    ],
     'sans': [
-        'Source Sans Pro',
+        'Roboto',
         'Frutiger',
         'Frutiger Linotype',
         'Calibri',
@@ -145,6 +131,13 @@ module.exports = {
         'Arial',
         'sans-serif',
     ],
+    'serif': [
+      'ff-meta-serif-web-pro',
+      'Fira Sans',
+      'Tinos',
+      'Alegreya',
+      'FFUnitSlabWebPro'
+    ]
   },
 
   /*
@@ -167,12 +160,11 @@ module.exports = {
   */
 
   textSizes: {
-    '12': '.75rem',
-    '14': '.875rem',
-    '16': '1rem',
-    '18': '1.125rem', 
-    '24': '1.5rem',
-    '48': '3rem', 
+    'small': '.875rem',
+    'text':  '1rem',
+    'main': '1.125rem',
+    'head': '1.25rem',
+    'title': '1.5rem',
   },
 
   /*
@@ -190,9 +182,13 @@ module.exports = {
   */
 
   fontWeights: {
-    'x-light': 200,
-    'normal': 400,
-    'black': 900,
+    '1': 100,
+    '2': 200,
+    '3': 300,
+    '4': 400,
+    '5': 500,
+    '7': 700,
+    '9': 900,
   },
 
   /*
@@ -208,14 +204,10 @@ module.exports = {
   */
 
   leading: {
-    '14-24': 1.71428, 
-    'normal': 1.5,
-    '1': 1,
-    '48-56': 1.1666,
-    '18-24': 1.3333,
-    '24-32': 1.3333,
-    '24-40': 1.6666,
-    '2': 2,
+    'small': 1.71428,
+    'text': 1.5,
+    'head': 1.6,
+    'title': 1.33333,
     'button': 2.2857,
     'iconlabel': 1.875,
   },
@@ -284,6 +276,7 @@ module.exports = {
   borderWidths: {
     default: '1px',
     '0': '0',
+    '2': '2px',
   },
 
   /*
@@ -303,7 +296,7 @@ module.exports = {
   |
   */
 
-  borderColors: Object.assign({ default: colors['accent-4'] }, colors),
+  borderColors: Object.assign({ default: colors['bordercolor'] }, colors),
 
   /*
   |-----------------------------------------------------------------------------
@@ -357,6 +350,7 @@ module.exports = {
     '4': '2rem', //32px
     '5': '2.5rem',//40px
     '6': '3rem', //48px
+    '8': '4rem', //64
     '9': '4.5rem', //72px
     '15': '7.5rem', //120px
     '18': '9rem',//144px
@@ -401,6 +395,7 @@ module.exports = {
       '5': '2.5rem',//40px
       '6': '3rem', //48px
       '9': '4.5rem', //72px
+      '12': '6rem', //96px
       '15': '7.5rem', //120px
       '18': '9rem',//144px
       '30': '15rem', //240px
@@ -416,6 +411,7 @@ module.exports = {
       '75p': '75%',
       '100': '100%',
       'screen': '100vw',
+      'square': '16.5rem',
   },
 
   /*
@@ -525,6 +521,7 @@ module.exports = {
     '4': '2rem', //32px
     '5': '2.5rem',//40px
     '6': '3rem', //48px
+    '12': '6rem', //96px
     'gutter': '0.75rem'
   },
 

@@ -1,0 +1,16 @@
+div class="bg-black text-white date h-8 w-100 fixed pin-t shadow-2"
+  div class="sm:w-sm md:w-md lg:w-lg xl:w-xl px-gutter mx-auto flex"
+    div class="sm:w-100 md:w-50p lg:w-33p xl:w-25p"
+      a href={{ "/" | absLangURL }} class="block w-30 px-gutter text-white"
+        {{ partial "logo.svg" . }}
+    div class="sm:w-100 md:w-50p lg:w-66p xl:w-75p"
+      ul class="flex flex-wrap flex-col md:flex-row lg:justify-end"
+        {{ range .AllTranslations }}
+        li class="md:h-4 pl-gutter pr-3"
+          a href={{ .URL }} class="text-white" {{ .Language.LanguageName }}
+        {{ end }}
+      ul class="flex flex-wrap flex-col md:flex-row lg:justify-end "
+        {{ range .Site.Menus.main }}
+          li class="md:h-4 pl-gutter pr-3"
+            a href={{.URL}} class="text-white inline-block" {{ .Name }}
+        {{end}}

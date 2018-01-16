@@ -1,30 +1,17 @@
 = content main
   section class="px-gutter w-100"
-    {{ with .Title }}
-      {{ partial "largetitle" . }}
+    {{ with .Content }}
+      {{ partial "herotext" . }}
     {{ end }}
   div class="w-100 flex flex-wrap"
-    div class="w-100 xl:w-50p px-gutter mb-4"
-      div class="border border-dashed p-3"
-        {{ .Content }}
     div class="w-100 xl:w-25p px-gutter mb-4"
-      div class="border border-dashed p-3"
-        {{ with .Params.email }}
-          a href=mailto:{{ . }} class="text-accent-4 hover:text-accent-3 transit block w-100 h-4 mb-2" target="_top"
-            span class="iconbox float-left"
-              {{ partial "icons/email_36.svg" . }}
-            span class="iconlabel"
-              {{ . }}
-        {{ end }}
-        {{ with .Params.phone }}
-          a href=tel:{{ . }} class="text-accent-4 hover:text-accent-3 transit w-100 h-4 mb-2"
-            span class="iconbox float-left"
-              {{ partial "icons/phone_36.svg" . }}
-            span class="iconlabel"
-              {{ . }}
-        {{ end }}
+      div class="p-4 card"
+        p {{ .Params.name }}
+        p {{ .Params.street }}
+        p {{ .Params.postalcode }}
+        p {{ .Params.country }}
     div class="w-100 xl:w-25p px-gutter mb-4"
-      div class="border border-dashed p-3"
+      div class="p-4 card"
         {{ with .Params.facebook }}
           a href={{ . }} class="text-accent-4 hover:text-accent-3 transit block w-100 h-4 mb-2" target="_blank"
             span class="iconbox float-left"
@@ -38,8 +25,24 @@
             span class="iconlabel" LinkedIn
         {{ end }}
         {{ with .Params.github }}
-          a href={{ . }} class="text-accent-4 hover:text-accent-3 transit block w-100 h-4 mb-2" target="_blank"
+          a href={{ . }} class="text-accent-4 hover:text-accent-3 transit block w-100 h-4 " target="_blank"
             span class="iconbox float-left"
               {{ partial "github.svg" . }}
             span class="iconlabel" Github
+        {{ end }}
+    div class="w-100 xl:w-50p px-gutter mb-4"
+      div class="p-4 card"
+        {{ with .Params.email }}
+          a href=mailto:{{ . }} class="text-accent-4 hover:text-accent-3 transit block w-100 h-4 mb-2" target="_top"
+            span class="iconbox float-left"
+              {{ partial "icons/email_36.svg" . }}
+            span class="iconlabel"
+              {{ . }}
+        {{ end }}
+        {{ with .Params.phone }}
+          a href=tel:{{ . }} class="text-accent-4 hover:text-accent-3 transit w-100 h-4 mb-2"
+            span class="iconbox float-left"
+              {{ partial "icons/phone_36.svg" . }}
+            span class="iconlabel"
+              {{ . }}
         {{ end }}

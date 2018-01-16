@@ -1,5 +1,5 @@
 ---
-title: Η έκθεση “Art made of Cement” στο Φουαρ
+title: Η έκθεση Art made of Cement στο Φουαρ
 date: 2016-04-02
 ---
 

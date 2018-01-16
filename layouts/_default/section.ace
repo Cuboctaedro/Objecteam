@@ -1,8 +1,5 @@
 = content main
   section class="px-gutter w-100 section"
-    {{ with .Title }}
-      {{ partial "largetitle" . }}
-    {{ end }}
     {{ with .Content }}
       {{ partial "herotext" . }}
     {{ end }}

@@ -1,4 +1,4 @@
-nav class="bg-accent-4 text-white uppercase label h-3 w-100 fixed pin-t shadow-2"
+nav class="bg-black text-white date h-6 w-100 fixed pin-t shadow-2"
   ul class="sm:w-sm md:w-md lg:w-lg xl:w-xl px-gutter mx-auto"
     {{ range .AllTranslations }}
     li class="inline-block px-gutter"
