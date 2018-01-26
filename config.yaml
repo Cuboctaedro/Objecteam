@@ -1,4 +1,4 @@
-baseURL: "http://localhost:1313/"
+baseURL: "http://objecteam.org/"
 relativeURLs: false
 canonifyURLs: false
 config: "config.yaml"

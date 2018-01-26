@@ -606,6 +606,7 @@ button,
   border-bottom-width: 1px;
   border-color: #c4b7b3;
   color: #c4b7b3;
+  white-space: nowrap;
 }
 
 .btn:hover {
@@ -617,8 +618,8 @@ button,
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 27px;
+  width: 21px;
+  height: 21px;
 }
 
 a {
