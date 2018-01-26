@@ -1,8 +1,8 @@
-section class="w-100 md:w-50p mb-6 px-gutter"
-  div class="p-4 card"
-    h2 class="title" 
+section class="mb-y-2 border-b pb-y-1"
+  div class=""
+    h2 class="title mb-y-2third" 
       a href={{ .URL | absLangURL }} {{ .Title }}
-    div class="my-2 date"
+    div class="date mb-y-2third"
       {{ partial "date" . }}
-    div class="my-2" {{ .Summary }}
+    div class="mb-y-2third" {{ .Summary }}
     a href={{ .URL | absLangURL }} class="btn btn-acc" {{ i18n "read_more"}}

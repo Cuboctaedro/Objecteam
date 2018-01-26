@@ -1,5 +1,5 @@
 ---
-title: The Forest under the Road exhibition in Athens
+title: The Forest under the Road
 date: 2016-02-02
 ---
 

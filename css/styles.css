@@ -12,128 +12,139 @@
  * See: https://github.com/tailwindcss/tailwindcss/issues/53#issuecomment-341413622
  */
 @tailwind preflight;
-
-@import url("//hello.myfonts.net/count/3593f3");
+@import url("/count/35a276");
 @font-face {
-  font-family: 'FFUnitSlabWebPro';
-  font-weight: 100;
-  font-style: normal;
-  src: url('/fonts/unit/3593F3_0_0.woff2') format('woff2'),
-       url('/fonts/unit/3593F3_0_0.woff') format('woff'),
-       url('/fonts/unit/3593F3_0_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'FFUnitSlabWebPro';
-  font-weight: 300;
-  font-style: italic;
-  src: url('/fonts/unit/3593F3_1_0.woff2') format('woff2'),
-       url('/fonts/unit/3593F3_1_0.woff') format('woff'),
-       url('/fonts/unit/3593F3_1_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'FFUnitSlabWebPro';
-  font-weight: 300;
-  font-style: normal;
-  src: url('/fonts/unit/3593F3_2_0.woff2') format('woff2'),
-       url('/fonts/unit/3593F3_2_0.woff') format('woff'),
-       url('/fonts/unit/3593F3_2_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'FFUnitSlabWebPro';
-  font-weight: 400;
-  font-style: normal;
-  src: url('/fonts/unit/3593F3_3_0.woff2') format('woff2'),
-       url('/fonts/unit/3593F3_3_0.woff') format('woff'),
-       url('/fonts/unit/3593F3_3_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'FFUnitSlabWebPro';
-  font-weight: 400;
-  font-style: italic;
-  src: url('/fonts/unit/3593F3_4_0.woff2') format('woff2'),
-       url('/fonts/unit/3593F3_4_0.woff') format('woff'),
-       url('/fonts/unit/3593F3_4_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'Iosevka';
+  font-family: 'GillSansNova';
   font-weight: 500;
   font-style: normal;
-  src: url('/fonts/iosevka/iosevka-medium.woff2') format('woff2'),
-       url('/fonts/iosevka/iosevka-medium.woff') format('woff'),
-       url('/fonts/iosevka/iosevka-medium.ttf') format('truetype');
+  src: url('/fonts/35A276_0_0.eot');
+  src: url('/fonts/35A276_0_0.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/35A276_0_0.woff2') format('woff2'),
+  url('/fonts/35A276_0_0.woff') format('woff'),
+  url('/fonts/35A276_0_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Iosevka';
-  font-weight: 300;
+  font-family: 'GillSansNova';
+  font-weight: 600;
   font-style: normal;
-  src: url('/fonts/iosevka/iosevka-light.woff2') format('woff2'),
-       url('/fonts/iosevka/iosevka-light.woff') format('woff'),
-       url('/fonts/iosevka/iosevka-light.ttf') format('truetype');
+  src: url('/fonts/35A276_1_0.eot');
+  src: url('/fonts/35A276_1_0.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/35A276_1_0.woff2') format('woff2'),
+  url('/fonts/35A276_1_0.woff') format('woff'),
+  url('/fonts/35A276_1_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Iosevka';
-  font-weight: 700;
+  font-family: 'JoannaNova';
+  font-weight: 400;
+  font-style: italic;
+  src: url('/fonts/35A276_2_0.eot');
+  src: url('/fonts/35A276_2_0.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/35A276_2_0.woff2') format('woff2'),
+  url('/fonts/35A276_2_0.woff') format('woff'),
+  url('/fonts/35A276_2_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JoannaNova';
+  font-weight: 400;
   font-style: normal;
-  src: url('/fonts/iosevka/iosevka-bold.woff2') format('woff2'),
-       url('/fonts/iosevka/iosevka-bold.woff') format('woff'),
-       url('/fonts/iosevka/iosevka-bold.ttf') format('truetype');
+  src: url('/fonts/35A276_3_0.eot');
+  src: url('/fonts/35A276_3_0.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/35A276_3_0.woff2') format('woff2'),
+  url('/fonts/35A276_3_0.woff') format('woff'),
+  url('/fonts/35A276_3_0.ttf') format('truetype');
 }
-
-
-.text {
-    @apply .text-main .leading-text .text-textcolor;
-}
-.head {
-  @apply .text-head .leading-head;
-}
-.title {
-    @apply .text-title .leading-title .font-5 .font-mono;
-}
-.small {
+.size-small {
     @apply .text-small .leading-small;
 }
-.date {
-    @apply .font-mono .font-5 .text-small .leading-small uppercase;
+.size-text {
+    @apply .text-text .leading-text;
+}
+.size-lg {
+    @apply .text-lg .leading-lg;
+}
+.size-xl {
+    @apply .text-xl .leading-text;
+}
+.size-xxl {
+    @apply .text-xxl .leading-xxl;
+}
+.caps {
+  @apply .uppercase .tracking-wide;
 }
 
+.overlay-red {
+  @apply .bg-red;
+   opacity: 0.5;
+}
+.title {
+  @apply .caps .size-lg .font-regular;
+}
 .maintext {
-  @apply .head .font-mono .font-3;
+  @apply .font-serif .size-xl .italic;
 }
-
-
+.big-title {
+  @apply .font-sans .size-xl .font-medium;
+}
+.label {
+    @apply .size-small .font-sans .font-medium .caps;
+}
+.date {
+  @apply .label .text-blue;
+}
 .btn {
-    @apply .font-mono .inline-block .tracking-wide .h-4 .px-2 .text-small .leading-button .uppercase .text-center;
+  @apply .label .text-blue .transit .w-c2 .border-b .border-grey .text-grey .whitespace-no-wrap;
 }
-.btn-acc {
-  @apply .text-white .bg-black .shadow-1 .transit;
-}
-.btn-acc:hover {
-  @apply .text-white .bg-accent .shadow-4;
+.btn:hover {
+  @apply .text-red .border-red;
 }
 .iconbox {
-  @apply .flex .justify-center .items-center .w-4 .h-4;
-}
-.iconlabel {
-  @apply .ml-1 .font-4 .text-small .font-mono .leading-iconlabel;
-}
-.card {
-    @apply  .shadow-2 .bg-white .border .border-dashed;
-}
-.card:hover {
-  @apply .shadow-5 ;
+  @apply .flex .justify-center .items-center;
+  width:21px;
+  height:21px;
 }
 a {
   @apply .text-black .transit;
 }
 a:hover {
-  @apply .text-accent;
+  @apply .text-red;
+}
+.big-border {
+  @apply .border-red .border-t-2 .border-dotted;
 }
 ::-moz-selection {
-  @apply .text-white .bg-accent;
+  @apply .text-white .bg-red;
  }
 ::selection {
-  @apply .text-white .bg-accent;
+  @apply .text-white .bg-red;
  }
+
+.wrapper {
+  @apply .w-full .px-x-half .mx-auto;
+}
+@screen sm {
+  .wrapper {
+    width: 476px;
+  }
+}
+@screen md {
+  .wrapper {
+    width: 700px;
+  }
+}
+@screen lg {
+  .wrapper {
+    width: 1036px;
+  }
+}
+@screen xl {
+  .wrapper {
+    width: 1372px;
+  }
+}
+.content > * {
+  @apply .block .max-w-c6 .mx-auto .px-x-half .mb-y-2third
+}
+
 /**
  * Here you would add any of your custom component classes; stuff that you'd
  * want loaded *before* the utilities so that the utilities could still
@@ -176,14 +187,16 @@ a {
 .transit, .card {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-.content p {
-    margin-bottom: 1rem;
-}
 svg {
   fill: currentColor;
   vertical-align: bottom;
 }
-
+.logo {
+  background-image: url('/images/logo.gif')
+}
+#mobile-menu.active {
+  display: block;
+}
 /**
  * Here you would add any custom utilities you need that don't come out of the
  * box with Tailwind.

@@ -1,0 +1,8 @@
+footer class="bg-black text-white uppercase text-small font-medium font-sans py-y-2"
+  div class="wrapper"
+    nav class="px-x-half"
+      ul class="flex flex-row"
+        {{ range .Site.Menus.footer }}
+          li class=""
+            a href={{.URL}} class="block text-white pr-x-1 border-r mr-x-1" {{ .Name }}
+        {{end}}

@@ -1,0 +1,5 @@
+section class="w-full sm:w-c4 md:w-c3 px-x-half mb-y-2"
+  h2 class="title mb-y-2third" 
+    a href={{ .URL | absLangURL }} {{ .Title }}
+  div class="mb-y-2third" {{ .Summary }}
+  a href={{ .URL | absLangURL }} class="btn btn-acc" {{ i18n "read_more"}}

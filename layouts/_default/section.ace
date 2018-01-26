@@ -1,12 +1,15 @@
 = content main
-  section class="px-gutter w-100 section"
-    {{ with .Content }}
-      {{ partial "herotext" . }}
-    {{ end }}
-  div class="w-100 flex flex-wrap"
+  // header class="w-100 px-gutter mb-6"
+  //   h1 class="big-title border-b border-dotted pb-1 text-grey" {{ .Title }}
+  section class="wrapper flex flex-wrap my-y-3"
+    div class="w-full px-x-half mb-y-2"
+      {{ with .Content }}
+        div class="maintext max-w-c6" {{ . }}
+      {{ end }}
+    div class="w-full flex flex-wrap mb-2"
     {{ if eq $.Type "what-we-do" }}
       {{ range where .Site.Pages "Type" "activity" }}
-        {{ partial "card" . }}
+        {{ partial "activity" . }}
       {{ end }}
     {{ else }}
       {{ range .Data.Pages }}
@@ -17,3 +20,4 @@
         {{ end }}
       {{ end }}
     {{ end }}
+    

@@ -1,0 +1,7 @@
+= content main
+  section class="wrapper flex flex-wrap my-y-3"
+    div class="w-full px-x-half mb-y-2"
+      {{ with .Content }}
+        div class="maintext max-w-c6" {{ . }}
+      {{ end }}
+    div class="w-full flex flex-wrap mb-2"

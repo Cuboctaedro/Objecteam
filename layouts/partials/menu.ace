@@ -1,6 +1,0 @@
-nav class=" w-100 lg:w-66p xl:w-75p"
-  ul class="flex flex-wrap flex-col md:flex-row lg:justify-end w-100"
-    {{ range .Site.Menus.main }}
-      li class="md:h-6 py-1 md:py-3 pl-gutter pr-3"
-        a href={{.URL}} class="date transit inline-block" {{ .Name }}
-    {{end}}

@@ -1,30 +1,29 @@
 = content main
-  section class="w-100"
+  section class="w-full bg-black text-white mb-y-3 bg-repeat bg-left-top" style="background-image:url('/images/grid.gif')"
     {{ with .Content }}
-      div class="px-gutter"
-        {{ partial "herotext" . }}
+      div class="wrapper py-y-3 size-xl md:text-xxl md:leading-xxl italic text-center"
+        div class="mx-auto max-w-c6" {{ . }}
     {{ end }}
-    div class="w-100 flex flex-row"
-      div class="w-100 px-gutter"
-        div class="h-square card flex items-center justify-center overflow-hidden mb-6"
-          img src="/images/frog.jpg" class="w-100 block"
-  section class="w-100 flex flex-wrap"
+  section class="wrapper  mb-y-1"
     {{ with .Site.GetPage "section" "what-we-do" }}
-      div class="w-100 px-gutter"
+      div class="w-full px-x-half mb-y-3"
         {{ with .Content }}
-          {{ partial "herotext" . }}
+          div class="maintext max-w-c6" {{ . }}
         {{ end }}
     {{ end }}
-    {{ range where .Site.Pages "Type" "activity" }}
-      {{ partial "card" . }}
-    {{ end }}
-  section class="w-100 flex flex-wrap"
-    {{ with .Site.GetPage "section" "blog" }}
-      div class="w-100 px-gutter"
-        {{ with .Content }}
-          {{ partial "herotext" . }}
-        {{ end }}
-    {{ end }}
-    {{ range where (where .Site.Pages "Section" "blog") ".Params.menu" "!=" "main"}}
-      {{ partial "post" . }}
-    {{ end }}
+    div class="w-full flex flex-wrap"
+      {{ range where .Site.Pages "Type" "activity" }}
+        {{ partial "activity" . }}
+      {{ end }}
+  div class="wrapper mb-y-3"
+    hr class="big-border mx-x-half"
+  section class="wrapper mb-y-3 flex flex-wrap items-stretch"
+    div class="w-c3 flex-none px-x-half mb-y-2 " 
+      {{ with .Site.GetPage "section" "blog" }}
+        a class="w-full h-8 bg-no-repeat" href={{ .URL | absLangURL }}
+          img src="/images/blog.gif"
+      {{ end }}
+    div class="max-w-c6 flex-none px-x-half mb-y-2"
+      {{ range where (where .Site.Pages "Section" "blog") ".Params.menu" "!=" "main"}}
+        {{ partial "post" . }}
+      {{ end }}

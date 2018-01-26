@@ -1,16 +1,19 @@
-div class="bg-black text-white date h-8 w-100 fixed pin-t shadow-2"
-  div class="sm:w-sm md:w-md lg:w-lg xl:w-xl px-gutter mx-auto flex"
-    div class="sm:w-100 md:w-50p lg:w-33p xl:w-25p"
-      a href={{ "/" | absLangURL }} class="block w-30 px-gutter text-white"
-        {{ partial "logo.svg" . }}
-    div class="sm:w-100 md:w-50p lg:w-66p xl:w-75p"
-      ul class="flex flex-wrap flex-col md:flex-row lg:justify-end"
-        {{ range .AllTranslations }}
-        li class="md:h-4 pl-gutter pr-3"
-          a href={{ .URL }} class="text-white" {{ .Language.LanguageName }}
-        {{ end }}
-      ul class="flex flex-wrap flex-col md:flex-row lg:justify-end "
-        {{ range .Site.Menus.main }}
-          li class="md:h-4 pl-gutter pr-3"
-            a href={{.URL}} class="text-white inline-block" {{ .Name }}
-        {{end}}
+div class="h-2 bg-blue text-white uppercase text-small font-medium font-sans shadow-3 fixed pin-x pin-t z-50"
+  div class="wrapper flex flex-row "
+    a href={{ "/" | absLangURL }} class="logo w-c3 h-2 block px-gutter bg-left-top bg-no-repeat" 
+      span class="hidden" Objecteam
+    // div class="flex-none w-100 md:w-50p lg:w-66p xl:w-75p px-gutter"
+    div class="px-gutter flex-grow"
+      nav class="flex justify-end"
+        a href="" class="block lg:hidden h-2 ml-x-half lg:ml-0 pr-0 md:pr-x-1 pt-y-2third text-white hover:text-black transit border-0 md:border-r border-white" toggle-target="#mobile-menu" 
+          {{ partial "menu.svg" . }}
+        ul class="hidden lg:flex border-r border-white pr-x-1 "
+          {{ range .Site.Menus.main }}
+            li class=""
+              a href={{.URL}} class="block h-2 ml-x-1 pt-y-2third text-white hover:text-black transit" {{ .Name }}
+          {{end}}
+        ul class="hidden md:flex border-r border-white pr-x-1"
+          {{ range .AllTranslations }}
+            li class=""
+              a href={{.URL}} class="block h-2 ml-x-1 pt-y-2third text-white hover:text-black transit" {{ .Language.LanguageName }}
+          {{end}}

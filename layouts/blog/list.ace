@@ -1,10 +1,11 @@
 = content main
-  section class="px-gutter w-100"
-    {{ with .Content }}
-      {{ partial "herotext" . }}
-    {{ end }}
+  section class="wrapper mb-y-3 flex flex-wrap my-y-3"
+    div class="w-c3 flex-none px-x-half mb-y-2"
+      {{ with .Content }}
+        div class="maintext" {{ . }}
+      {{ end }}
+    div class="max-w-c6 flex-none px-x-half mb-y-2"
+      {{ range .Data.Pages }}
+        {{ partial "post" . }}
+      {{ end }}
 
-  section class="w-100 flex flex-wrap"
-    {{ range .Data.Pages }}
-      {{ partial "post" . }}
-    {{ end }}

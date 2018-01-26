@@ -1,0 +1,12 @@
+div class="w-full h-screen hidden absolute pin z-10" id="mobile-menu" style="background:rgba(63,64,56,0.8)"
+  nav class="mx-auto w-75p my-y-3 bg-blue opacity-100 shadow-4 z-50 p-x-1"
+    ul class="label text-center border-b border-white"
+      {{ range .Site.Menus.main }}
+        li class=""
+          a href={{.URL}} class="block py-y-1 border-t border-dotted border-white text-white transit" {{ .Name }}
+      {{end}}
+    ul class="label text-center"
+      {{ range .AllTranslations }}
+        li class=""
+          a href={{.URL}} class="block py-y-1 border-b border-dotted border-white text-white transit" {{ .Language.LanguageName }}
+      {{end}}

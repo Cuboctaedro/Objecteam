@@ -1,8 +1,8 @@
-div class="p-4 card"
-  h3 class="title mb-2" {{ .Title }}
-  div class="mb-2 date "
+div class="card"
+  h3 class="title" {{ .Title }}
+  div class="interface leading-small mb-3"
     {{ partial "date" . }}
-  div class="mt-2" {{ .Content }}
+  div class="content mb-3" {{ .Content }}
   {{ with .Params.download }}
     a class="btn btn-acc mr-2 mb-2" href={{ . }} target="blank" download
   {{ end }}

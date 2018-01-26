@@ -11,6 +11,8 @@ twitter:
 menu:
     main:
         weight: 4
+    footer:
+        weight: 1
 ---
 Objecteam ΚΟΙΝ.Σ.ΕΠ.
 

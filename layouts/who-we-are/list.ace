@@ -1,14 +1,11 @@
 = content main
-  section class="px-gutter w-100"
-    {{ with .Content }}
-      {{ partial "herotext" . }}
-    {{ end }}
-  div class="w-100 px-gutter flex flex-col lg:flex-row"
-    div class="w-100 lg:w-50 lg:pr-gutter mb-3"
-      {{ range where .Site.Pages "Type" "news" }}
-        {{ partial "news" . }}
+  section class="wrapper flex flex-wrap my-y-3"
+    div class="w-full lg:w-c3 xl:w-full px-x-half mb-y-3"
+      {{ with .Content }}
+        div class="maintext max-w-c6" {{ . }}
       {{ end }}
-    div class="w-100 lg:w-50 lg:pl-gutter mb-3"
+    div class="w-full lg:w-c6 xl:w-full flex flex-wrap mb-2"
       {{ range where .Site.Pages "Type" "member" }}
         {{ partial "member" . }}
       {{ end }}
+

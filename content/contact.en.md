@@ -15,6 +15,8 @@ type: contact
 menu:
     main:
         weight: 4
+    footer:
+        weight: 1
 ---
 
 Contact us to make something together:

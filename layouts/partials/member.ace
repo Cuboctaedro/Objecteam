@@ -1,31 +1,33 @@
-div class="p-4 card"
-  h3 class="title" {{ .Title }}
-  div class="mt-2 mb-3" 
-    img src="{{ .Site.BaseURL }}{{ .Params.image }}" class="float-left mr-3 mb-3 mt-1"
+div class="w-full md:w-c6 flex flex-col md:flex-row mb-y-2"
+  div class="w-c2 px-x-half" 
+    div class="w-full h-0 pt-full bg-cover rounded-full relative" style="background-image:url({{ .Site.BaseURL }}{{ .Params.image }})"
+      span class="overlay-red absolute pin rounded-full"
+  div class="w-full md:w-c4 px-x-half"
+    h3 class="title mb-y-1" {{ .Title }}
     {{ .Content }}
-  div class="pb-3"
-    {{ with .Params.email }}
-    span class="float-left mr-3 mb-3"
-      a href=mailto:{{ . }} class=" transit iconbox" target="_top"
-        {{ partial "icons/email_36.svg" . }}
-    {{ end }}
-    {{ with .Params.web }}
-    span class="float-left mr-3 mb-3"
-      a href={{ . }} class=" transit iconbox" target="_blank"
-        {{ partial "icons/computer_36.svg" . }}
-    {{ end }}
-    {{ with .Params.facebook }}
-    span class="float-left mr-3 mb-3"
-      a href={{ . }} class=" transit iconbox" target="_blank" 
-        {{ partial "facebook.svg" . }}
-    {{ end }}
-    {{ with .Params.linkedin }}
-    span class="float-left mr-3 mb-3"
-      a href={{ . }} class=" transit iconbox" target="_blank"
-        {{ partial "linkedin.svg" . }}
-    {{ end }}
-    {{ with .Params.github }}
-    span class="float-left mr-3 mb-3"
-      a href={{ . }} class=" transit iconbox" target="_blank"
-        {{ partial "github.svg" . }}
-    {{ end }}
+    div class="mt-y-1 border-t pt-y-third"
+      {{ with .Params.email }}
+      span class="float-left mr-x-half"
+        a href=mailto:{{ . }} class=" transit iconbox" target="_top"
+          {{ partial "icons/email_36.svg" . }}
+      {{ end }}
+      {{ with .Params.web }}
+      span class="float-left mr-x-half"
+        a href={{ . }} class=" transit iconbox" target="_blank"
+          {{ partial "icons/computer_36.svg" . }}
+      {{ end }}
+      {{ with .Params.facebook }}
+      span class="float-left mr-x-half"
+        a href={{ . }} class=" transit iconbox" target="_blank" 
+          {{ partial "facebook.svg" . }}
+      {{ end }}
+      {{ with .Params.linkedin }}
+      span class="float-left mr-x-half"
+        a href={{ . }} class=" transit iconbox" target="_blank"
+          {{ partial "linkedin.svg" . }}
+      {{ end }}
+      {{ with .Params.github }}
+      span class="float-left mr-x-half"
+        a href={{ . }} class=" transit iconbox" target="_blank"
+          {{ partial "github.svg" . }}
+      {{ end }}
