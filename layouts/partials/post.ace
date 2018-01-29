@@ -4,5 +4,9 @@ section class="mb-y-2 border-b pb-y-1"
       a href={{ .URL | absLangURL }} {{ .Title }}
     div class="date mb-y-2third"
       {{ partial "date" . }}
-    div class="mb-y-2third" {{ .Summary }}
-    a href={{ .URL | absLangURL }} class="btn btn-acc" {{ i18n "read_more"}}
+    {{ if eq $.Type "news" }}
+      div class="mb-y-2third" {{ .Content }}
+    {{ else }}
+      div class="mb-y-2third" {{ .Summary }}
+      a href={{ .URL | absLangURL }} class="btn btn-acc" {{ i18n "read_more"}}
+    {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: Contact
-email: contact@objecteam.org
+email: objecteam@yahoo.gr
 phone: +30 210 82 17 131
 facebook: https://www.facebook.com/objecteam/
 linkedin: https://www.linkedin.com/in/objecteam/
